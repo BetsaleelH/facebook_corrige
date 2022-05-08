@@ -59,3 +59,6 @@ class PostsController < ApplicationController
     params.require(:post).permit(:image, :image_cache, :content)
   end
 end
+
+
+

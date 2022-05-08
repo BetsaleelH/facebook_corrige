@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
     flash[:danger] = "Déconnecté"
     redirect_to new_session_path
   end
-
+    
   
   def create
     user = User.find_by(email: params[:session][:email].downcase)
@@ -24,3 +24,6 @@ class SessionsController < ApplicationController
     end
   end
 end
+     
+
+     
